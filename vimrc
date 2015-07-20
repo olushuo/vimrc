@@ -28,11 +28,18 @@ set shiftwidth=4
 set expandtab
 set number
 set cscopequickfix=s-,c-,d-,i-,t-,e-
+set cc=80
 
 " Mac pro book interface
-colorscheme darkblue
+colorscheme solarized
+set background=dark
+set cursorline
+set ruler
+set hlsearch
 set guifont=monaco:h18
+
+" Keyboard mapping
+nmap <F10> :wq<CR>
+nmap <F8> :TagbarToggle<CR>
 let NERDTreeShowBookmarks=1
 "let NERDTreeWinPos="right"
-"let Tlist_Show_one_File=1
-"let Tlist_Exit_OnlyWindow=1
