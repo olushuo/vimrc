@@ -32,6 +32,8 @@ set cc=80
 
 " Mac pro book interface
 colorscheme solarized
+set encoding=utf-8
+set fileencoding=utf-8
 set background=dark
 set cursorline
 set ruler
@@ -40,6 +42,8 @@ set guifont=monaco:h18
 
 " Keyboard mapping
 nmap <F10> :wq<CR>
+nmap <F9> :q!<CR>
+nmap <F7> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 let NERDTreeShowBookmarks=1
 "let NERDTreeWinPos="right"
