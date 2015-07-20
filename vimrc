@@ -10,6 +10,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'powerline/fonts'
 Plugin 'bling/vim-airline'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'altercation/vim-colors-solarized'
@@ -38,7 +39,9 @@ set background=dark
 set cursorline
 set ruler
 set hlsearch
-set guifont=monaco:h18
+set laststatus=2
+let g:airline_powerline_fonts=1
+set guifont=Ubuntu\ Mono\ derivative\ Powerline:h24
 
 " Keyboard mapping
 nmap <F10> :wq<CR>
