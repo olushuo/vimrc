@@ -1,0 +1,13 @@
+.tmp_versions
+sbd.mod.c
+*.cmd
+*.o
+*.so
+*.a
+*.ko
+*.out
+tags
+sbdm
+*.order
+*.symvers
+*ycm_extra_conf.py*
