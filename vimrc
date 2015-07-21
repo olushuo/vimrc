@@ -44,9 +44,12 @@ let g:airline_powerline_fonts=1
 set guifont=Ubuntu\ Mono\ derivative\ Powerline:h24
 
 " Keyboard mapping
+nmap <F4> :cw<CR>
+nmap <F5> :cclose<CR>
+nmap <F8> :w<CR>
 nmap <F10> :wq<CR>
 nmap <F9> :q!<CR>
-nmap <F7> :NERDTreeToggle<CR>
-nmap <F8> :TagbarToggle<CR>
+nmap <F6> :NERDTreeToggle<CR>
+nmap <F7> :TagbarToggle<CR>
 let NERDTreeShowBookmarks=1
 "let NERDTreeWinPos="right"
