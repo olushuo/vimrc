@@ -44,8 +44,8 @@ let g:airline_powerline_fonts=1
 set guifont=Ubuntu\ Mono\ derivative\ Powerline:h24
 
 " Keyboard mapping
-nmap <F4> :cn<CR>
-nmap <F5> :cp<CR>
+nmap <F4> :cp<CR>
+nmap <F5> :cn<CR>
 nmap <F8> :w<CR>
 nmap <F10> :wq<CR>
 nmap <F9> :q!<CR>
