@@ -18,7 +18,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/Mark--Karkat'
 
 call vundle#end()
-filetype plugin indent on    
+
+filetype plugin indent on
+    
 " C language
 syntax enable
 syntax on
@@ -55,3 +57,33 @@ nmap <F6> :TagbarToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos="right"
 let g:tagbar_left=1
+
+" Go lang tagbar
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
