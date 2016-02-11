@@ -19,6 +19,7 @@ Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'dkprice/vim-easygrep'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 
