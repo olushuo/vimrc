@@ -15,6 +15,7 @@ Plugin 'https://github.com/powerline/fonts.git'
 Plugin 'bling/vim-airline'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'dkprice/vim-easygrep'
@@ -46,7 +47,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 " Mac pro book interface
-colorscheme evening  
+colorscheme molokai  
 set encoding=utf-8
 set fileencoding=utf-8
 set background=dark
