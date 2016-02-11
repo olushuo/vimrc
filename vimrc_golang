@@ -16,6 +16,8 @@ Plugin 'bling/vim-airline'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/Mark--Karkat'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'dkprice/vim-easygrep'
 
 call vundle#end()
 
@@ -33,9 +35,18 @@ set expandtab
 set number
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set cc=80
+set foldmethod=indent
+
+" indent guide
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 " Mac pro book interface
-colorscheme solarized
+colorscheme evening  
 set encoding=utf-8
 set fileencoding=utf-8
 set background=dark
