@@ -20,6 +20,7 @@ Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 
@@ -57,7 +58,7 @@ set ruler
 set hlsearch
 set laststatus=2
 let g:airline_powerline_fonts=1
-set guifont=Ubuntu\ Mono\ derivative\ Powerline:h24
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 18 
 
 " Keyboard mapping
 nmap <F4> :cp<CR>
@@ -100,6 +101,7 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
+let mapleader=";"
 " Go lang syntax highlight
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
